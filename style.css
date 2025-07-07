@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: center;
+}
+header h1{
+    color: #ffffff;
+   
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+nav ul{
+    background-color: #ffffff;
+    height: 4em;
+    font-size: 1.2em;
+
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
+}
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    background-color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.img-box {
+  background-image: url("img/css.webp");
+  background-size: 9em;
+  border: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10em;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.img-box:hover {
+  filter: brightness(10%);
+}
+
+.san-fran {
+  background-image: url("img/js.webp");
+}
+
+.new-york {
+  background-image: url("img/html.webp");
+}
+
+.card_list ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 34px;
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(187, 187, 187);
+  color: rgb(255, 251, 251);
+  width: 15em;
+  margin-top: 3em;
+}
+
+.btn {
+  background-color: rgb(47, 0, 255);
+  color: white;
+  width: 7em;
+  height: 3em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: rgb(114, 114, 114);
+  color: black;
+}
+
+footer{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin: 0;
+}
+footer a{
+    color: #000000;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer a:visited{
+    color: #000000;
+}
+footer a:visited:hover{
+    color: #000000;
+}
+footer a:visited:hover{
+    text-decoration: underline;
+}
+footer a:visited:hover{
+    color: #000000;
+}
+footer a:visited:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .card_list ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+    gap: 20px;
+
+  
+}
+}
