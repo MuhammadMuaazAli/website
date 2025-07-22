@@ -1,114 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code With Muaaz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
-    <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code With Muaaz</title>
+  <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <nav>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tutorials">Source Code</a></li>
+      <li><a href="#contact">Social</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1 id="typeHeading"></h1>
+    <p>Your go-to resource for coding tutorials and tips!</p>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Here is the link of our Amazing Notes</h2>
+      <div class="card_list">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#tutorials">Source Code</a></li>
-            <li><a href="#contact">Social</a></li>
+          <li>
+            <div class="card">
+              <div class="img-box html-img"></div>
+              <h3>HTML <br>Notes</h3>
+              <a href="notes/CODEWITHMUAAZ-HTML.pdf"><button class="btn">Download</button></a>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="img-box css-img"></div>
+              <h3>CSS <br>Notes</h3>
+              <button class="btn">Download</button>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="img-box js-img"></div>
+              <h3>JavaScript <br>Notes</h3>
+              <button class="btn">Download</button>
+            </div>
+          </li>
         </ul>
-    </nav>
-    <header >
-        <h1>Welcome to Code With Muaaz</h1>
-        <p>Your go-to resource for coding tutorials and tips!</p>
-    </header>
+      </div>
+    </section>
 
+    <section id="tutorials">
+      <h2>Here is the link of our Amazing Source Codes</h2>
+      <div class="card_list">
+        <ul>
+          <li>
+            <div class="card">
+              <div class="img-box html-img"></div>
+              <h3>HTML <br>Source Code</h3>
+              <a href="https://github.com/MuhammadMuaazAli/HTML" target="_blank">
+                <button class="btn">Code</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="img-box css-img"></div>
+              <h3>CSS <br>Source Code</h3>
+              <a href="https://github.com/MuhammadMuaazAli/CSS" target="_blank">
+                <button class="btn">Code</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="img-box js-img"></div>
+              <h3>JavaScript <br>Source Code</h3>
+              <a href="https://github.com/MuhammadMuaazAli/Java-Script" target="_blank">
+                <button class="btn">Code</button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <main>
-        <section id="home" style="margin: 5em;">
-            <h2>Here is the link of our Amazing Notes  </h2>
-            <div class="card_list " ">
-    <ul>
-      <li>
-        <div class="card">
-          <div class="img-box new-york"></div>
-          <h3 style="padding: 19px;">HTML <br>Notes</h3>
-         <a href="notes/CODEWITHMUAAZ-HTML.pdf"> <button class="btn">Download</button></a>
+    <section id="contact">
+      <h2>Follow Us</h2>
+      <p>Want to connect with us?</p>
+      <p>Our social media links are listed below:</p>
+      <div class="social">
+        <div>
+          <a href="https://www.youtube.com/@CodeWithMuaaz-official" target="_blank">
+            <i class="fa-brands fa-youtube" style="color: #ff0000; font-size: 48px;"></i><br>YouTube
+          </a>
         </div>
-      </li>
-      <li>
-        <div class="card">
-          <div class="img-box"></div>
-          <h3 style="padding: 19px;">CSS <br>Notes</h3>
-        
-          <button class="btn">Download</button>
+        <div>
+          <a href="https://github.com/MuhammadMuaazAli" target="_blank">
+            <i class="fa-brands fa-github" style="font-size: 48px;"></i><br>GitHub
+          </a>
         </div>
-      </li>
-      <li>
-        <div class="card">
-          <div class="img-box san-fran"></div>
-          <h3 style="padding: 19px;">Java Script <br>Notes</h3>
-          <button class="btn">Download</button>
+        <div>
+          <a href="https://www.instagram.com/codewithmuaaz" target="_blank">
+            <i class="fa-brands fa-instagram" style="color: #f06292; font-size: 48px;"></i><br>Instagram
+          </a>
         </div>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </section>
+  </main>
 
-        </section>
+  <footer>
+    <p>&copy; <span id="year"></span> Code With Muaaz. All rights reserved.</p>
+  </footer>
 
-        <section id="tutorials">
-            <h2>Here is the link of our Amazing Source codes </h2>
-             <div class="card_list">
-    <ul>
-      <li>
-        <div class="card">
-          <div class="img-box new-york"></div>
-          <h3 style="padding: 19px;">HTML <br>Source Code</h3>
-           <a href="https://github.com/MuhammadMuaazAli/HTML" target="_blank">  <button class="btn">Code</button></a>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <div class="img-box"></div> <!-- defaults to Paris -->
-          <h3 style="padding: 19px;">CSS <br>Source Code </h3>
-            <a href="https://github.com/MuhammadMuaazAli/CSS" target="_blank">  <button class="btn">Code</button></a>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <div class="img-box san-fran"></div>
-          <h3 style="padding: 19px;">Java Script <br>Source Code </h3>
-          <a href="https://github.com/MuhammadMuaazAli/Java-Script" target="_blank">  <button class="btn">Code</button></a>
-        
-        </div>
-      </li>
-    </ul>
-  </div>
-
-          
-
-        </section>
-        <section id="contact" style="margin: 5em;">
-           <h2>Follow Us</h2>
-<p>Want to connect with us?</p>
-<p>Our social media links are listed below:</p>
-
-<div class="social">
-     <div><a href="https://www.youtube.com/@CodeWithMuaaz-official" target="_blank"> <i class="fa-brands fa-youtube" style="color: #ff0000; font-size: 48px;"></i>
- <br>YouTube</a></div>
-      <div> <a href="https://github.com/MuhammadMuaazAli" target="_blank"><i class="fa-brands fa-github" style="font-size: 48px;"></i><br>github</a></div>
-     <div>  <a href="https://www.instagram.com/codewithmuaaz?igsh=MWx3aDU5N2RnOGVvMA==" target="_blank"> <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 48px;"></i> <br>Instagram </a></div>
-</div>
-
-
-        </section>
-    </main>
-
-    <footer style="margin-top: 4em;">
-         
-        <p>&copy; 2025 Code With Muaaz. All rights reserved.</p>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
