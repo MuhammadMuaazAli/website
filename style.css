@@ -111,9 +111,13 @@ h2 {
   transition: transform 0.3s ease;
 }
 
+ 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 255, 170, 0.4);
+  background: linear-gradient(135deg, #00ffaa22, #2e2e2e);
 }
+
 
 .img-box {
   height: 120px;
@@ -179,6 +183,9 @@ footer {
   font-size: 0.9em;
 }
 
+.android-img {
+  background-image: url('img/Muaaz.png');
+}
 
 @media screen and (max-width: 768px) {
   header h1 {
