@@ -6,7 +6,7 @@ function startTyping() {
   let i = 0;
   heading.innerHTML = "";
 
-  clearInterval(typingInterval); // Clear previous interval
+  clearInterval(typingInterval); 
 
   typingInterval = setInterval(() => {
     heading.innerHTML += text.charAt(i);
@@ -18,4 +18,4 @@ function startTyping() {
 }
 
 startTyping();
-setInterval(startTyping, 4000); // Safe to repeat now
+setInterval(startTyping, 4000); 
