@@ -19,3 +19,6 @@ function startTyping() {
 
 startTyping();
 setInterval(startTyping, 4000); 
+
+
+
