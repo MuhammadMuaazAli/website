@@ -4,19 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Code With Muaaz</title>
-  <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#tutorials">Source Code</a></li>
-      <li><a href="#app">App</a></li>
-      <li><a href="#contact">Social</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">Code With Muaaz</div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tutorials">Source Code</a></li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#contact">Social</a></li>
+      </ul>
+    </div>
   </nav>
 
   <header>
@@ -89,7 +96,6 @@
       </div>
     </section>
 
-    <!-- ✅ NEW APP SECTION -->
     <section id="app">
       <h2>Download Our Official Android App</h2>
       <div class="card_list">
@@ -100,6 +106,23 @@
               <h3>Code With Muaaz<br>Android App</h3>
               <a href="app/code with muaaz.apk" target="_blank">
                 <button class="btn">Download</button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="Portfolio">
+      <h2>Visit my Portfolio</h2>
+      <div class="card_list">
+        <ul>
+          <li>
+            <div class="card">
+              <div class="img-box Portfolio-img"></div>
+              <h3>Portfolio</h3>
+              <a href="Portfolio/index.html" target="_blank">
+                <button class="btn">Visit</button>
               </a>
             </div>
           </li>
