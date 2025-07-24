@@ -1,8 +1,6 @@
-
 html {
   scroll-behavior: smooth;
 }
-
 
 * {
   margin: 0;
@@ -12,24 +10,10 @@ html {
 }
 
 body {
-background: linear-gradient(135deg, #141e30, #243b55);
+  background: linear-gradient(135deg, #141e30, #243b55);
   color: #fff;
   line-height: 1.6;
 }
-
-
-nav {
-   background: linear-gradient(135deg, #3a3a3a, #000000fd);
- 
-  padding: 1.4em;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
 
 body::before {
   content: '';
@@ -37,22 +21,55 @@ body::before {
   height: 70px;
 }
 
-nav ul {
+nav {
+  background: linear-gradient(135deg, #3a3a3a, #000000fd);
+  padding: 1.4em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00ffaa;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8em;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 2em;
+  flex-wrap: wrap;
 }
 
-nav a {
+.nav-links a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #ff0000;
   padding: 5px;
 }
@@ -63,11 +80,8 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* padding: 3em 1em 2em; */
-  /* background: linear-gradient(135deg, #00b4db, #0083b0); */
-  background-image: url('img/Navy\ Blue\ Geometric\ Technology\ LinkedIn\ Banner.png');
+  background-image: url('img/Navy Blue Geometric Technology LinkedIn Banner.png');
   background-repeat: repeat-x;
-  
   height: 26vh;
 }
 
@@ -111,13 +125,11 @@ h2 {
   transition: transform 0.3s ease;
 }
 
- 
 .card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 255, 170, 0.4);
   background: linear-gradient(135deg, #00ffaa22, #2e2e2e);
 }
-
 
 .img-box {
   height: 120px;
@@ -138,6 +150,14 @@ h2 {
 
 .js-img {
   background-image: url('https://cdn-icons-png.flaticon.com/512/5968/5968292.png');
+}
+
+.android-img {
+  background-image: url('img/Muaaz.png');
+}
+
+.Portfolio-img {
+  background-image: url('Portfolio/img/me.jpg');
 }
 
 .btn {
@@ -183,29 +203,32 @@ footer {
   font-size: 0.9em;
 }
 
-.android-img {
-  background-image: url('img/Muaaz.png');
-}
-
 @media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
+  .hamburger {
+    display: block;
   }
-  header {
-    height: 30vh;
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #000000e7;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 1em 0;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .card {
     width: 100%;
-    
-    
-  }
-  .card_list ul{
-    flex-direction: column;
   }
 
-  nav ul {
-  
-    gap: 1em;
+  .card_list ul {
+    flex-direction: column;
   }
 }
