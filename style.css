@@ -48,10 +48,10 @@ nav {
 
 .hamburger {
   display: none;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 1;
 }
 
 .nav-links {
@@ -231,4 +231,12 @@ footer {
   .card_list ul {
     flex-direction: column;
   }
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
 }
+
