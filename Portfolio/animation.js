@@ -1,25 +1,7 @@
 var tl = gsap.timeline();
 
-tl.from(".switch", {
-  x: "100vw",
-  opacity: 0,
-  duration: 1.2,
-  rotate: 360,
-});
 
-tl.from(".labels", {
-  y: "100vh",
-  opacity: 0,
-  rotate: 360,
-  duration: 0.9,
-});
 
-// tl.from(".side", {
-//   x: "100vw",
-//   opacity: 0,
-//   duration: 0.9,
-//   ease: "power2.out"
-// });
 
 tl.from(".pic", {
   x: "-100vw",
@@ -70,12 +52,6 @@ tl.from(".eng, .spa, .ger", {
   ease: "power4.out"
 });
 
-// tl.from(".up", {
-//   opacity: 0,
-//   x: "-20vw",
-//   duration: 0.9,
-//   ease: "power2.out"
-// });
 
 tl.from(".up .innercon", {
   opacity: 0,
@@ -84,12 +60,6 @@ tl.from(".up .innercon", {
   ease: "power3.out"
 });
 
-// tl.from(".down", {
-//   opacity: 0,
-//   x: "20vw",
-//   duration: 0.9,
-//   ease: "power2.out"
-// });
 
 tl.from(".down .innercon", {
   opacity: 0,
@@ -98,9 +68,3 @@ tl.from(".down .innercon", {
   ease: "power3.out"
 });
 
-// tl.from("footer", {
-//   opacity: 0,
-//   x: "20vw",
-//   duration: 0.9,
-//   ease: "power2.out"
-// });
