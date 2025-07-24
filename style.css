@@ -126,9 +126,10 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 255, 170, 0.4);
-  background: linear-gradient(135deg, #00ffaa22, #2e2e2e);
+  padding: 19px;
+  box-shadow: 0 12px 30px rgba(0, 255, 170, 0.5), 0 0 20px rgba(0, 255, 170, 0.3);
+  background: linear-gradient(135deg, #00ffaa33, #1e1e1e);
+  cursor: pointer;
 }
 
 .img-box {
