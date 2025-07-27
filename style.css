@@ -131,6 +131,18 @@ h2 {
   background: linear-gradient(135deg, #00ffaa33, #1e1e1e);
   cursor: pointer;
 }
+.note {
+  display: none;
+  opacity: 0;
+  color: red;
+  transition: opacity 0.5s ease;
+  margin-top: 10px;
+}
+
+.note.show {
+  display: block;
+  opacity: 1;
+}
 
 .img-box {
   height: 120px;
