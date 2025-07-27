@@ -44,3 +44,56 @@ document.addEventListener('click', (e) => {
     navLinks.classList.remove('active');
   }
 });
+
+
+const hamburgerIcon = hamburger.querySelector("i");
+
+let menuOpen = false;
+
+hamburger.addEventListener("click", () => {
+  menuOpen = !menuOpen;
+
+  if (menuOpen) {
+    
+    hamburgerIcon.classList.remove("fa-bars");
+    hamburgerIcon.classList.add("fa-xmark");
+
+    
+    gsap.set(navLinks, { display: "flex", opacity: 0, y: -20 });
+    gsap.to(navLinks, {
+      opacity: 1,
+      y: 0,
+      duration: 0.5,
+      ease: "power2.out"
+    });
+  } else {
+    
+    hamburgerIcon.classList.remove("fa-xmark");
+    hamburgerIcon.classList.add("fa-bars");
+
+    
+    gsap.to(navLinks, {
+      opacity: 0,
+      y: -20,
+      duration: 0.4,
+      ease: "power2.in",
+      onComplete: () => {
+        gsap.set(navLinks, { display: "none" });
+      }
+    });
+  }
+});
+
+
+const cssBtn = document.getElementById("css_btn");
+
+cssBtn.addEventListener("click", () => {
+  const card = cssBtn.closest(".card");
+  const note = card.querySelector(".note");
+
+  note.classList.add("show");
+
+  setTimeout(() => {
+    note.classList.remove("show");
+  }, 6000); 
+});
