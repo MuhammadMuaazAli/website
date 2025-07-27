@@ -95,5 +95,5 @@ cssBtn.addEventListener("click", () => {
 
   setTimeout(() => {
     note.classList.remove("show");
-  }, 6000); 
+  }, 15000); 
 });
