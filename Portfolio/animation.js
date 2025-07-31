@@ -1,8 +1,5 @@
 var tl = gsap.timeline();
 
-
-
-
 tl.from(".pic", {
   x: "-100vw",
   opacity: 0,
