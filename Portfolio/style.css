@@ -1,4 +1,4 @@
-/* Base Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Navbar */
 nav {
   background: linear-gradient(135deg, #3a3a3a, #424242fd);
   padding: 1.4em;
@@ -66,7 +65,7 @@ nav {
   padding: 5px;
 }
 
-/* Layout */
+
 .main {
   margin-top: 6em;
   display: flex;
@@ -77,7 +76,7 @@ nav {
   justify-content: center;
 }
 
-/* Sidebar */
+
 .side {
   flex: 280px;
   max-width: 400px;
@@ -160,7 +159,6 @@ nav {
   background-color: black;
 }
 
-/* Content Cards */
 .end {
   max-width: 800px;
   display: flex;
@@ -192,7 +190,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.151);
 }
 
-/* Button */
 .project_btn {
   background-color: red;
   color: white;
@@ -210,7 +207,7 @@ nav {
   box-shadow: 0 6px 14px rgba(84, 255, 5, 1);
 }
 
-/* Footer */
+
 footer {
   margin-top: 2em;
   width: 100%;
@@ -239,7 +236,6 @@ footer a {
   color: white;
 }
 
-/* Responsive Navigation */
 @media screen and (max-width: 768px) {
   .nav-links {
     position: absolute;
