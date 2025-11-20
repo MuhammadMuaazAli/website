@@ -10,41 +10,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="shortcut icon" href="../Favicon.ico" type="image/x-icon">
- <link rel="stylesheet" href="../CSS/style.css">
+
+  <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/nav.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <div class="bg-animation"></div>
+    <div class="gradient-bg"></div>
+  <div class="overlay" id="overlay" onclick="toggleMobileMenu()"></div>
+
 
   <nav id="navbar">
-    <div class="logo">Code With Muaaz</div>
-    <ul>
+    <div class="logo" onclick="window.location.href='#home'">Code With Muaaz</div>
+    <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="aboutme.html">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#learning">Learning</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#features">Features</a></li>
+
+
+      <li><a href="./aboutme.html">About</a></li>
+      <li><a href="./contactme.html">Contact</a></li>
+      <li><a href="./Portfolio.html">Portfolio</a></li>
     </ul>
 
-  
-      <div class="hamburger" onclick="toggleNav()">
-        <span></span><span></span><span></span>
-      </div>
-   
+    <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
   </nav>
 
-  <div class="mobile-nav" id="mobileNav">
-    <a href="../index.html" onclick="toggleNav()">Home</a>
-    <a href="aboutme.html" onclick="toggleNav()">About</a>
-    <a href="#skills" onclick="toggleNav()">Skills</a>
-    <a href="#projects" onclick="toggleNav()">Projects</a>
-    <a href="#learning" onclick="toggleNav()">Learning</a>
-    <a href="#contact" onclick="toggleNav()">Contact</a>
-  </div>
+  
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="../index.html" onclick="toggleMobileMenu()">Home</a></li>
+      <li><a href="#features" onclick="toggleMobileMenu()">Features</a></li>
 
+     
+      <li><a href="./aboutme.html" onclick="toggleMobileMenu()">About</a></li>
+      <li><a href="./contactme.html" onclick="toggleMobileMenu()">Contact</a></li>
+      <li><a href="../HTML/Portfolio.html" onclick="toggleMobileMenu()">Portfolio</a></li>
+    </ul>
+  </div>
   <section class="hero" id="home">
     <div class="hero-content">
       <h1>Redesign. Rebuild. Recreate.</h1>
@@ -283,24 +289,6 @@
     </div>
   </footer>
 
-  <script>
-    function toggleNav() {
-      const mobileNav = document.querySelector('.mobile-nav');
-      const hamburger = document.querySelector('.hamburger');
-      mobileNav.classList.toggle('active');
-      hamburger.classList.toggle('active');
-    }
-
-    function showTab(tabId) {
-      const tabs = document.querySelectorAll('.learning-content');
-      tabs.forEach(tab => tab.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-
-      const buttons = document.querySelectorAll('.tab-btn');
-      buttons.forEach(btn => btn.classList.remove('active'));
-      event.currentTarget.classList.add('active');
-    }
-  </script>
-
+  <script src="../JS/nav.js"></script>
 </body>
 </html>
